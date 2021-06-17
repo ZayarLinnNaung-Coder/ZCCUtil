@@ -1,0 +1,28 @@
+@import "util";
+
+.results .heading{
+  margin-bottom: 5px !important;
+}
+.heading-hr{
+  margin: 0 !important;
+  margin-bottom: 5px !important;
+  width: 175px;
+  height: 2px !important;
+  color: $borderColor;
+  opacity: 1;
+}
+.info-container .info{
+  margin-top: 5px !important;
+}
+
+@media only screen and (max-width: 500px) {
+  @media only screen and (max-height: 750px) {
+    .main-container{
+      height: 200vh !important;
+    }
+    .main-container .row{
+      height: 200vh !important;
+      align-items: center !important;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "util";
+
+select, input{
+  background-color: lighten($primary, 10) !important;
+  border: 0 !important;
+  color: $textColor !important;
+}
+select:focus, input:focus{
+  box-shadow: none;
+  outline: none;
+}
+.cardDetail-container{
+  max-height: 500px !important;
+  overflow-y: scroll !important;
+  background-color: $secondary;
+}
+.generator-container{
+  background-color: $secondary;
+}
+.generator-container, .cardDetail-container{
+  border: 1px solid $borderColor;
+}
+
+.gBtn-group, .headingContainer{
+  padding: 10px;
+  border-bottom: 1px solid lighten($secondary, 20);
+}
+.form-container{
+  padding: 15px !important;
+}
+.formInput{
+  margin-bottom: 10px !important;
+}
+.generateBtn-Container{
+  padding-top: 10px !important;
+  border-top: 1px solid lighten($secondary, 20);
+}
+.detailItem{
+  font-size: $smallFontSize;
+  margin: 10px;
+  padding: 10px;
+  background-color: lighten($primary, 10);
+}
+@media only screen and (max-width: 500px) {
+  @media only screen and (max-height: 750px) {
+    .generatorContainerRow{
+      height: 200vh !important;
+    }
+  }
+}
