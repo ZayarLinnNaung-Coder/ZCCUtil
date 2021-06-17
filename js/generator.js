@@ -19,7 +19,7 @@ async function initApp() {
     dataMMLength = dataMM.length;
     await setData();
     document.querySelector('.zLoader').style.display = "none";
-    document.querySelector('.mainContainer').style.display = "flex";
+    document.querySelector('.mainContainer').style.display = "block";
 }
 
 generateBtn.addEventListener("click", function () {
