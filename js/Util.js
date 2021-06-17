@@ -2,7 +2,7 @@ class Util{
     fetchAll(){
         async function fetchMM(){
             let objArr = [];
-            const response = await fetch('https://github.com/ZayarLinnNaung-Coder/ZCCUtil/mm-binList-data.csv');
+            const response = await fetch('mm-binList-data.csv');
             const responseText = await response.text();
             const headerTable = responseText.split('\n').slice(0,1)[0].split(',');
             const dataTable = responseText.split('\n').slice(1);
@@ -20,7 +20,7 @@ class Util{
         }
         async function fetchGlobal(){
             let objArr = [];
-            const response = await fetch('https://github.com/ZayarLinnNaung-Coder/ZCCUtil/binList-data.csv');
+            const response = await fetch('binList-data.csv');
             const responseText = await response.text();
             const headerTable = responseText.split('\n').slice(0,1)[0].split(',');
             const dataTable = responseText.split('\n').slice(1);
