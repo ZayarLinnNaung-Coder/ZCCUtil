@@ -32,6 +32,8 @@ generateBtn.addEventListener("click", function () {
     }
     let rawItemList = [];
     let brand = decodeURI(document.querySelector('#brand').value);
+    console.log(brand)
+    console.log(dataGlobalLength)
     let totalItem = 0;
     for(let i=0; i<dataGlobalLength; i++){
         const speed = Math.trunc((Math.random() * 100) + 10);
@@ -61,6 +63,7 @@ function setData() {
 function addItem(rawItemList) {
     cardDetailContainer.innerHTML = '';
     let length = 16;
+    console.log(rawItemList)
     if(rawItemList[0].brand === 'VISA') {
         const max = 16;
         const min = 13;
